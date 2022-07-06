@@ -69,8 +69,9 @@ Multicall2 Address on testnet is 0xee15888091C61b2D4Bf9B5194B55c47Ab7FdB2ca
 npx hardhat run scripts/deploy.ts --network cronos-testnet3
 ```
 
-2. Group multiple calls to getWeather function and aggregate results
-   run
+2. Group multiple calls to getWeather function and aggregate the results
+
+run
 
 ```
 npx hardhat run scripts/task3.ts --network cronos-testnet3
