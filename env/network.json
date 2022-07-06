@@ -1,0 +1,17 @@
+{
+  "cronos-testnet3": {
+    "url": "https://cronos-testnet-3.crypto.org:8545",
+    "chainId": 338,
+    "symbol": "TCRO"
+  },
+  "cronos-mainnet": {
+    "url": "https://rpc.vvs.finance",
+    "chainId": 25,
+    "symbol": "CRO"
+  },
+  "localhost": {
+    "url": "http://localhost:8545",
+    "chainId": 31337,
+    "symbol": "TCRO"
+  }
+}

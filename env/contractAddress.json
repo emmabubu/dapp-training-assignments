@@ -1,0 +1,74 @@
+{
+  "cronos-mainnet": {
+    "swap": {
+      "VVS": {
+        "factory": "0x3b44b2a187a7b3824131f8db5a74194d0a42fc15",
+        "router": "0x145863Eb42Cf62847A6Ca784e6416C1682b1b2Ae",
+        "pairs": {
+          "CRO-ETH": "0xA111C17f8B8303280d3EB01BBcd61000AA7F39F9",
+          "CRO-BTC": "0x8F09fFf247B8fDB80461E5Cf5E82dD1aE2EBd6d7",
+          "CRO-USDC": "0xe61Db569E231B3f5530168Aa2C9D50246525b6d6",
+          "CRO-VVS": "0xbf62c67eA509E86F07c8c69d0286C0636C50270b",
+          "VVS-USDC": "0x814920D1b8007207db6cB5a2dD92bF0b082BDBa1",
+          "CRO-BIFI": "0x1803E360393A472beC6E1A688BDF7048d3076b1A",
+          "USDC-TONIC": "0x2f12D47Fe49B907d7a5Df8159C1CE665187F15c4"
+        },
+        "vault": "0xA6fF77fC8E839679D4F7408E8988B564dE1A2dcD",
+        "masterChef": "0xDccd6455AE04b03d785F12196B492b18129564bc"
+      },
+      "crodex": {
+        "factory": "0xe9c29cB475C0ADe80bE0319B74AD112F1e80058F",
+        "router": "0xeC0A7a0C2439E8Cb67b992b12ecd020Ea943c7Be",
+        "pairs": []
+      }
+    },
+    "tokens": {
+      "WCRO": "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+      "WETH": "0xe44Fd7fCb2b1581822D0c862B68222998a0c299a",
+      "WBTC": "0x062E66477Faf219F25D27dCED647BF57C3107d52",
+      "USDC": "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+      "USDT": "0x66e428c3f67a68878562e79A0234c1F83c208770",
+      "DAI": "0xF2001B145b43032AAF5Ee2884e456CCd805F677D",
+      "VVS": "0x2D03bECE6747ADC00E1a131BBA1469C15fD11e03",
+      "BIFI": "0xe6801928061CDbE32AC5AD0634427E140EFd05F9",
+      "TONIC": "0xDD73dEa10ABC2Bff99c60882EC5b2B81Bb1Dc5B2",
+      "xVVS": "0x7fE4DB9063b7Dd7ba55313B9c258070bEd2C143A"
+    }
+  },
+  "cronos-testnet3": {
+    "swap": {
+      "VVS": {
+        "factory": "",
+        "router": "",
+        "pairs": {
+          "CRO-ETH": "",
+          "CRO-BTC": "",
+          "CRO-USDC": "",
+          "CRO-VVS": "",
+          "VVS-USDC": "",
+          "CRO-BIFI": "",
+          "USDC-TONIC": ""
+        },
+        "vault": "",
+        "masterChef": ""
+      },
+      "crodex": {
+        "factory": "",
+        "router": "",
+        "pairs": []
+      }
+    },
+    "tokens": {
+      "WCRO": "0x6a3173618859C7cd40fAF6921b5E9eB6A76f1fD4",
+      "WETH": "",
+      "WBTC": "",
+      "USDC": "",
+      "USDT": "",
+      "DAI": "",
+      "VVS": "0x904Bd5a5AAC0B9d88A0D47864724218986Ad4a3a",
+      "BIFI": "",
+      "TONIC": "",
+      "xVVS": "0x99cEEF14F0Db80E6f691AF925cE1b3759cB54ecC"
+    }
+  }
+}
