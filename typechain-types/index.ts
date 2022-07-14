@@ -6,6 +6,8 @@ export type { abis };
 import type * as artifacts from "./artifacts";
 export type { artifacts };
 export * as factories from "./factories";
+export type { GuessNumber } from "./artifacts/contracts/GuessNumber";
+export { GuessNumber__factory } from "./factories/artifacts/contracts/GuessNumber__factory";
 export type { Multicall } from "./artifacts/contracts/Multicall";
 export { Multicall__factory } from "./factories/artifacts/contracts/Multicall__factory";
 export type { Multicall2 } from "./artifacts/contracts/Multicall2";

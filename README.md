@@ -116,3 +116,61 @@ sample output
   }
 ]
 ```
+
+## Week 2 Assignment
+
+smart contract code is in [GuessNumber.sol](contracts/GuessNumber.sol)
+test file is in [guessNumber.test.ts](test/guessNumber.test.ts)
+
+Run test case
+
+```
+npx hardhat test
+```
+
+Sample outputs
+
+```
+ % npx hardhat test
+Generating typings for: 0 artifacts in dir: ./typechain-types for target: ethers-v5
+Successfully generated 10 typings!
+Successfully generated 20 typings for external artifacts!
+
+
+  Guess Number
+    deploy with valid guess number, max number of players be 2
+      ✔ smoking test: players can guess, winner can receives rewards when host reveals answer (59ms)
+      Guess
+        ✔ the first player can guess
+        ✔ the second player can guess
+        ✔ should revert when the third player submit guessing
+        ✔ should revert guess when player inputs an negative number
+        ✔ should succeed when player inputs 0
+        ✔ should succeed when player inputs 999
+        ✔ should revert guess when player inputs 1000
+        ✔ should revert guess when player inputs 1001
+        ✔ should revert guess if the player has already submmited a guessing
+        ✔ should revert guess if the number has been guessed by others
+        ✔ should revert guess if the player attaches ether value less than the host deposited
+        ✔ should revert guess if the player attaches ether value more than the host deposited
+        ✔ should revert guess if the game has concluded (42ms)
+        ✔ should revert if host submits guessing
+      Reveal
+        ✔ should revert reveal when not all players have submitted guessing
+        ✔ should revert reveal if keccak256(nonce) doesnot equal to the nonceHash
+        ✔ should revert reveal if keccak256(nonce + number) doesnot equal to the nonceNumHash
+        ✔ should distribute all the rewards evenly if both guessings have the same delta
+        ✔ should revert reveal if has revealed already (68ms)
+    deploy with different guess number
+      ✔ should reward the only winner correctly when deployed with number 0 (47ms)
+      ✔ should distribute the rewards evenly to all players when deploy with invalid number(test 1000 and 1001) (98ms)
+      ✔ should revert reveal if has revealed already(deployed with invalid number) (58ms)
+    has more than 2 players(test 3 players)
+      ✔ should give rewards to the only winner when deploy with valid number (58ms)
+      ✔ should distribute all the rewards evenly if two guessings have the same smallest delta (57ms)
+      ✔ should distribute the rewards evenly to all players when deploy with number 1000 (85ms)
+
+
+  26 passing (2s)
+
+```
