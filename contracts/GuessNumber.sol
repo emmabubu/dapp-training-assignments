@@ -146,7 +146,7 @@ contract GuessNumber {
     }
 
     function _getNonceNumHash2(bytes32 nonce, uint16 number)
-        public
+        private
         pure
         returns (bytes32)
     {
