@@ -405,7 +405,7 @@ describe('Guess Number', function () {
     const depositAmount: number = 100;
     const numOfPlayer = 3;
 
-    it('should give rewards to the only winner when deploy with valid number', async function () {
+    it('should give rewards to the only winner when deployed with valid number', async function () {
       const num = 500;
       guessNumber = await deploy(nonce, num, numOfPlayer, depositAmount);
       for (let i = 0; i < numOfPlayer; i++) {
@@ -436,7 +436,7 @@ describe('Guess Number', function () {
       expect(player2BalanceAfter).to.equal(player2BalanceBefore);
     });
 
-    it('should distribute all the rewards evenly if two guessings have the same smallest delta', async function () {
+    it('should distribute all the rewards evenly to two winners if two guessings have the same smallest delta when deployed with valid number', async function () {
       const num = 500;
       guessNumber = await deploy(nonce, num, numOfPlayer, depositAmount);
       const tx0 = await guessNumber
@@ -473,7 +473,7 @@ describe('Guess Number', function () {
       expect(player2BalanceAfter).to.equal(player2BalanceBefore);
     });
 
-    it('should distribute the rewards evenly to all players when deploy with number 1000', async function () {
+    it('should distribute the rewards evenly to all players when deployed with number 1000', async function () {
       const num = 1000;
       const guessNumber = await deploy(nonce, num, numOfPlayer, depositAmount);
       for (let i = 0; i < numOfPlayer; i++) {
